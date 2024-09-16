@@ -30,21 +30,26 @@
         {
             label1 = new Label();
             textBox1 = new TextBox();
-            button1 = new Button();
+            btnDisplay = new Button();
             textBox2 = new TextBox();
-            label3 = new Label();
             label4 = new Label();
             label2 = new Label();
+            isOutput = new ListBox();
+            btnClear = new Button();
+            btnQuit = new Button();
+            label3 = new Label();
+            label5 = new Label();
+            label6 = new Label();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(63, 115);
+            label1.Location = new Point(63, 107);
             label1.Name = "label1";
-            label1.Size = new Size(99, 25);
+            label1.Size = new Size(162, 25);
             label1.TabIndex = 0;
-            label1.Text = "Ticket Price";
+            label1.Text = "Ticket Price (Each) -";
             // 
             // textBox1
             // 
@@ -53,38 +58,31 @@
             textBox1.Size = new Size(588, 31);
             textBox1.TabIndex = 1;
             // 
-            // button1
+            // btnDisplay
             // 
-            button1.Location = new Point(63, 269);
-            button1.Name = "button1";
-            button1.Size = new Size(588, 46);
-            button1.TabIndex = 2;
-            button1.Text = "Calculate";
-            button1.UseVisualStyleBackColor = true;
+            btnDisplay.BackColor = SystemColors.ControlLight;
+            btnDisplay.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnDisplay.Location = new Point(63, 412);
+            btnDisplay.Name = "btnDisplay";
+            btnDisplay.Size = new Size(174, 94);
+            btnDisplay.TabIndex = 2;
+            btnDisplay.Text = "&Display Total Ticket Price";
+            btnDisplay.UseVisualStyleBackColor = false;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(63, 218);
+            textBox2.Location = new Point(63, 226);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(588, 31);
             textBox2.TabIndex = 4;
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(192, 357);
-            label3.Name = "label3";
-            label3.Size = new Size(94, 25);
-            label3.TabIndex = 5;
-            label3.Text = "Total Cost:";
-            // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(280, 41);
+            label4.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(270, 41);
             label4.Name = "label4";
-            label4.Size = new Size(149, 32);
+            label4.Size = new Size(173, 38);
             label4.TabIndex = 6;
             label4.Text = "Movie Sales";
             // 
@@ -93,20 +91,82 @@
             label2.AutoSize = true;
             label2.Location = new Point(63, 190);
             label2.Name = "label2";
-            label2.Size = new Size(130, 25);
+            label2.Size = new Size(142, 25);
             label2.TabIndex = 7;
-            label2.Text = "Ticket Quantity";
+            label2.Text = "Ticket Quantity -";
+            // 
+            // isOutput
+            // 
+            isOutput.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            isOutput.FormattingEnabled = true;
+            isOutput.ItemHeight = 45;
+            isOutput.Location = new Point(63, 287);
+            isOutput.Name = "isOutput";
+            isOutput.Size = new Size(588, 94);
+            isOutput.TabIndex = 8;
+            // 
+            // btnClear
+            // 
+            btnClear.BackColor = SystemColors.ControlLight;
+            btnClear.Location = new Point(269, 412);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(174, 94);
+            btnClear.TabIndex = 9;
+            btnClear.Text = "&Clear";
+            btnClear.UseVisualStyleBackColor = false;
+            // 
+            // btnQuit
+            // 
+            btnQuit.BackColor = SystemColors.ControlLight;
+            btnQuit.Location = new Point(477, 412);
+            btnQuit.Name = "btnQuit";
+            btnQuit.Size = new Size(174, 94);
+            btnQuit.TabIndex = 10;
+            btnQuit.Text = "&Quit";
+            btnQuit.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(117, 515);
+            label3.Name = "label3";
+            label3.Size = new Size(65, 25);
+            label3.TabIndex = 11;
+            label3.Text = "ALT+D";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(327, 515);
+            label5.Name = "label5";
+            label5.Size = new Size(63, 25);
+            label5.TabIndex = 12;
+            label5.Text = "ALT+C";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(539, 515);
+            label6.Name = "label6";
+            label6.Size = new Size(66, 25);
+            label6.TabIndex = 13;
+            label6.Text = "ALT+Q";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(709, 419);
+            ClientSize = new Size(717, 557);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label3);
+            Controls.Add(btnQuit);
+            Controls.Add(btnClear);
+            Controls.Add(isOutput);
             Controls.Add(label2);
             Controls.Add(label4);
-            Controls.Add(label3);
             Controls.Add(textBox2);
-            Controls.Add(button1);
+            Controls.Add(btnDisplay);
             Controls.Add(textBox1);
             Controls.Add(label1);
             Name = "Form1";
@@ -119,10 +179,15 @@
 
         private Label label1;
         private TextBox textBox1;
-        private Button button1;
+        private Button btnDisplay;
         private TextBox textBox2;
-        private Label label3;
         private Label label4;
         private Label label2;
+        private ListBox isOutput;
+        private Button btnClear;
+        private Button btnQuit;
+        private Label label3;
+        private Label label5;
+        private Label label6;
     }
 }
