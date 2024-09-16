@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            textBox1 = new TextBox();
+            tcktPrice = new TextBox();
             btnDisplay = new Button();
-            textBox2 = new TextBox();
+            tcktQuantity = new TextBox();
             label4 = new Label();
             label2 = new Label();
-            isOutput = new ListBox();
+            lstOut = new ListBox();
             btnClear = new Button();
             btnQuit = new Button();
             label3 = new Label();
@@ -51,12 +51,12 @@
             label1.TabIndex = 0;
             label1.Text = "Ticket Price (Each) -";
             // 
-            // textBox1
+            // tcktPrice
             // 
-            textBox1.Location = new Point(63, 143);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(588, 31);
-            textBox1.TabIndex = 1;
+            tcktPrice.Location = new Point(63, 143);
+            tcktPrice.Name = "tcktPrice";
+            tcktPrice.Size = new Size(588, 31);
+            tcktPrice.TabIndex = 1;
             // 
             // btnDisplay
             // 
@@ -69,12 +69,12 @@
             btnDisplay.Text = "&Display Total Ticket Price";
             btnDisplay.UseVisualStyleBackColor = false;
             // 
-            // textBox2
+            // tcktQuantity
             // 
-            textBox2.Location = new Point(63, 226);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(588, 31);
-            textBox2.TabIndex = 4;
+            tcktQuantity.Location = new Point(63, 226);
+            tcktQuantity.Name = "tcktQuantity";
+            tcktQuantity.Size = new Size(588, 31);
+            tcktQuantity.TabIndex = 4;
             // 
             // label4
             // 
@@ -95,15 +95,15 @@
             label2.TabIndex = 7;
             label2.Text = "Ticket Quantity -";
             // 
-            // isOutput
+            // lstOut
             // 
-            isOutput.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            isOutput.FormattingEnabled = true;
-            isOutput.ItemHeight = 45;
-            isOutput.Location = new Point(63, 287);
-            isOutput.Name = "isOutput";
-            isOutput.Size = new Size(588, 94);
-            isOutput.TabIndex = 8;
+            lstOut.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lstOut.FormattingEnabled = true;
+            lstOut.ItemHeight = 45;
+            lstOut.Location = new Point(63, 287);
+            lstOut.Name = "lstOut";
+            lstOut.Size = new Size(588, 94);
+            lstOut.TabIndex = 8;
             // 
             // btnClear
             // 
@@ -162,12 +162,12 @@
             Controls.Add(label3);
             Controls.Add(btnQuit);
             Controls.Add(btnClear);
-            Controls.Add(isOutput);
+            Controls.Add(lstOut);
             Controls.Add(label2);
             Controls.Add(label4);
-            Controls.Add(textBox2);
+            Controls.Add(tcktQuantity);
             Controls.Add(btnDisplay);
-            Controls.Add(textBox1);
+            Controls.Add(tcktPrice);
             Controls.Add(label1);
             Name = "Form1";
             Text = "Movie Sales";
@@ -178,12 +178,12 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
+        private TextBox tcktPrice;
         private Button btnDisplay;
-        private TextBox textBox2;
+        private TextBox tcktQuantity;
         private Label label4;
         private Label label2;
-        private ListBox isOutput;
+        private ListBox lstOut;
         private Button btnClear;
         private Button btnQuit;
         private Label label3;
