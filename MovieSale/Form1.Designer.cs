@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            tcktPrice = new TextBox();
+            tktPrice = new TextBox();
             btnDisplay = new Button();
-            tcktQuantity = new TextBox();
+            tktQuantity = new TextBox();
             label4 = new Label();
             label2 = new Label();
             lstOut = new ListBox();
@@ -51,12 +51,12 @@
             label1.TabIndex = 0;
             label1.Text = "Ticket Price (Each) -";
             // 
-            // tcktPrice
+            // tktPrice
             // 
-            tcktPrice.Location = new Point(63, 143);
-            tcktPrice.Name = "tcktPrice";
-            tcktPrice.Size = new Size(588, 31);
-            tcktPrice.TabIndex = 1;
+            tktPrice.Location = new Point(63, 143);
+            tktPrice.Name = "tktPrice";
+            tktPrice.Size = new Size(588, 31);
+            tktPrice.TabIndex = 1;
             // 
             // btnDisplay
             // 
@@ -69,12 +69,12 @@
             btnDisplay.Text = "&Display Total Ticket Price";
             btnDisplay.UseVisualStyleBackColor = false;
             // 
-            // tcktQuantity
+            // tktQuantity
             // 
-            tcktQuantity.Location = new Point(63, 226);
-            tcktQuantity.Name = "tcktQuantity";
-            tcktQuantity.Size = new Size(588, 31);
-            tcktQuantity.TabIndex = 4;
+            tktQuantity.Location = new Point(63, 226);
+            tktQuantity.Name = "tktQuantity";
+            tktQuantity.Size = new Size(588, 31);
+            tktQuantity.TabIndex = 4;
             // 
             // label4
             // 
@@ -165,9 +165,9 @@
             Controls.Add(lstOut);
             Controls.Add(label2);
             Controls.Add(label4);
-            Controls.Add(tcktQuantity);
+            Controls.Add(tktQuantity);
             Controls.Add(btnDisplay);
-            Controls.Add(tcktPrice);
+            Controls.Add(tktPrice);
             Controls.Add(label1);
             Name = "Form1";
             Text = "Movie Sales";
@@ -178,9 +178,9 @@
         #endregion
 
         private Label label1;
-        private TextBox tcktPrice;
+        private TextBox tktPrice;
         private Button btnDisplay;
-        private TextBox tcktQuantity;
+        private TextBox tktQuantity;
         private Label label4;
         private Label label2;
         private ListBox lstOut;
