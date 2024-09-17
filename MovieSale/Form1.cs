@@ -6,5 +6,17 @@ namespace MovieSale
         {
             InitializeComponent();
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            tktPrice.Clear();
+            tktQuantity.Clear();
+            lstOut.Items.Clear();
+        }
+
+        private void btnQuit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -37,9 +37,6 @@
             lstOut = new ListBox();
             btnClear = new Button();
             btnQuit = new Button();
-            label3 = new Label();
-            label5 = new Label();
-            label6 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -114,6 +111,7 @@
             btnClear.TabIndex = 9;
             btnClear.Text = "&Clear";
             btnClear.UseVisualStyleBackColor = false;
+            btnClear.Click += btnClear_Click;
             // 
             // btnQuit
             // 
@@ -124,42 +122,13 @@
             btnQuit.TabIndex = 10;
             btnQuit.Text = "&Quit";
             btnQuit.UseVisualStyleBackColor = false;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(117, 515);
-            label3.Name = "label3";
-            label3.Size = new Size(65, 25);
-            label3.TabIndex = 11;
-            label3.Text = "ALT+D";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(327, 515);
-            label5.Name = "label5";
-            label5.Size = new Size(63, 25);
-            label5.TabIndex = 12;
-            label5.Text = "ALT+C";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(539, 515);
-            label6.Name = "label6";
-            label6.Size = new Size(66, 25);
-            label6.TabIndex = 13;
-            label6.Text = "ALT+Q";
+            btnQuit.Click += btnQuit_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(717, 557);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label3);
+            ClientSize = new Size(717, 535);
             Controls.Add(btnQuit);
             Controls.Add(btnClear);
             Controls.Add(lstOut);
@@ -186,8 +155,5 @@
         private ListBox lstOut;
         private Button btnClear;
         private Button btnQuit;
-        private Label label3;
-        private Label label5;
-        private Label label6;
     }
 }
